@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(208, 240, 255);
+    color: #333;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4aa3df;
+}
+
+
+/* PRODUCTO */
+
+.producto-detalle {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+
+    display: flex;
+    gap: 60px;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px #00000020;
+}
+
+
+/* IMAGEN */
+
+.imagen-producto {
+    width: 45%;
+    text-align: center;
+}
+
+.imagen-producto img {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+
+/* INFORMACIÓN */
+
+.info-producto {
+    width: 45%;
+}
+
+.info-producto h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.descripcion {
+    line-height: 1.5;
+}
+
+.info-producto h3 {
+    margin-top: 30px;
+}
+
+.info-producto li {
+    margin-bottom: 8px;
+}
+
+
+/* BOTÓN */
+
+.info-producto button {
+    margin-top: 20px;
+    padding: 13px 35px;
+    border: none;
+    border-radius: 20px;
+
+    background-color: #4aa3df;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.info-producto button:hover {
+    background-color: #3189c4;
+}
+
+
+/* PIE */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}

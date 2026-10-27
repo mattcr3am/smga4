@@ -1,0 +1,378 @@
+
+/* GENERAL */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(208, 240, 255);
+    color: #15192e;
+}
+
+html { 
+    scroll-behavior: smooth
+    ;}
+
+    
+/* ENCABEZADO */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: rgb(242, 248, 250);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 70px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4aa3df;
+}
+
+
+/* INICIO */
+
+.Inicio {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.Inicio span {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.Inicio img {
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.Inicio h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.Inicio p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.Inicio button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4aa3df;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+.Inicio button:hover {
+    background-color: #3189c4;
+}
+
+
+/* SOBRE NOSOTROS */
+
+.Nosotros {
+    padding: 70px 20px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgb(242, 248, 250);
+}
+
+.Nosotros h2 {
+    font-size: 30px;
+}
+
+.Nosotros p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.nosotros-bloque {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.nosotros-bloque div {
+    flex: 1;
+    text-align: left;
+}
+
+.nosotros-bloque img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.nosotros-bloque div {
+    flex: 1;
+}
+
+.img .nosotros-bloque2 {
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    align-self: flex-start;
+}
+
+.nosotros-final {
+    text-align: center;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+/* ANABEL */
+
+.mascota-flotante {
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+    z-index: 1000;
+}
+
+.mascota-flotante img {
+    width: 100%;
+    position: absolute;
+}
+
+.mascota-hover {
+    display: none;
+}
+
+.mascota-flotante:hover .mascota-normal {
+    display: none;
+}
+
+.mascota-flotante:hover .mascota-hover {
+    display: block;
+}
+
+/* PRODUCTOS */
+
+.Productos {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.Productos h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.Producto {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #00000020;
+}
+
+.Producto img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.Producto h3 {
+    margin: 15px 0 10px;
+}
+
+.Producto p {
+    line-height: 1.4;
+}
+
+.Producto .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #4aa3df;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Producto .boton:hover {
+    background-color: #3189c4;
+}
+
+.Producto button:hover {
+    background-color: #3189c4;
+}
+
+
+/* EQUIPO */
+
+.Equipo {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgb(242, 248, 250);
+}
+
+.Equipo h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.Personas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.Persona {
+    width: 180px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.Persona h3 {
+    margin-bottom: 10px;
+}
+
+.Persona p {
+    line-height: 1.4;
+}
+
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* PARA CELU*/
+
+@media (max-width: 600px) {
+
+    /* Inicio */
+    .Inicio {
+        padding: 40px 15px;
+    }
+
+    .Inicio span {
+        font-size: 30px;
+    }
+
+    .Inicio img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .Inicio h2 {
+        font-size: 25px;
+    }
+
+    .Inicio p {
+        font-size: 16px;
+    }
+
+    /* Nosotros */
+    .nosotros-bloque {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nosotros-bloque img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .nosotros-bloque div {
+        width: 100%;
+    }
+
+    /* Productos */
+    .Producto {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Equipo */
+    .Persona {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Anabel */
+    .mascota-flotante {
+        width: 100px;
+        height: 100px;
+        bottom: -25px;
+        right: 5px;
+    }
+
+    /* Pie de página */
+    footer {
+        padding: 20px 10px;
+        overflow-wrap: anywhere;
+    }
+}
