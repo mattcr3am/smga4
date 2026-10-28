@@ -8,11 +8,11 @@ body {
     color: #15192e;
 }
 
-html { 
-    scroll-behavior: smooth
-    ;}
+html {
+    scroll-behavior: smooth;
+}
 
-    
+
 /* ENCABEZADO */
 
 header {
@@ -149,11 +149,6 @@ nav a:hover {
     border-radius: 15px;
 }
 
-
-.nosotros-bloque div {
-    flex: 1;
-}
-
 .img .nosotros-bloque2 {
     width: 350px;
     height: 220px;
@@ -166,6 +161,7 @@ nav a:hover {
     max-width: 700px;
     margin: 50px auto;
 }
+
 
 /* ANABEL */
 
@@ -194,6 +190,7 @@ nav a:hover {
 .mascota-flotante:hover .mascota-hover {
     display: block;
 }
+
 
 /* PRODUCTOS */
 
@@ -250,10 +247,6 @@ nav a:hover {
     background-color: #3189c4;
 }
 
-.Producto button:hover {
-    background-color: #3189c4;
-}
-
 
 /* EQUIPO */
 
@@ -291,7 +284,6 @@ nav a:hover {
 }
 
 
-
 /* PIE DE PÁGINA */
 
 footer {
@@ -306,13 +298,78 @@ footer p {
 }
 
 
-/* PARA CELU*/
+/* ADAPTACIÓN PARA CELULARES */
 
 @media (max-width: 600px) {
 
+    /* Evitar que la página se extienda hacia la derecha */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    /* Encabezado */
+
+    header {
+        display: flex;
+        width: 100%;
+        padding: 10px 8px;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .logo img {
+        width: 38px;
+        height: 38px;
+        flex-shrink: 0;
+    }
+
+    .logo h1 {
+        font-size: 14px;
+        line-height: 1.2;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    nav {
+        display: flex;
+        flex: 1;
+        min-width: 0;
+        gap: 12px;
+        margin-left: 5px;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav a {
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
     /* Inicio */
+
     .Inicio {
+        width: 100%;
+        box-sizing: border-box;
         padding: 40px 15px;
+        text-align: center;
     }
 
     .Inicio span {
@@ -320,9 +377,11 @@ footer p {
     }
 
     .Inicio img {
+        display: block;
         width: 100%;
         max-width: 400px;
         height: auto;
+        margin: 20px auto;
     }
 
     .Inicio h2 {
@@ -330,39 +389,118 @@ footer p {
     }
 
     .Inicio p {
+        width: 100%;
+        max-width: 600px;
+        box-sizing: border-box;
         font-size: 16px;
+        margin: 20px auto;
     }
 
-    /* Nosotros */
+    /* Sobre nosotros */
+
+    .Nosotros {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 15px;
+    }
+
+    .Nosotros p,
+    .intro,
+    .nosotros-final {
+        width: 100%;
+        max-width: 700px;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
     .nosotros-bloque {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        box-sizing: border-box;
         gap: 20px;
+        margin: 35px auto;
     }
 
     .nosotros-bloque img {
+        display: block;
         width: 100%;
         max-width: 400px;
         height: auto;
+        align-self: center;
     }
 
     .nosotros-bloque div {
         width: 100%;
+        flex: none;
+        box-sizing: border-box;
+        text-align: left;
     }
 
     /* Productos */
+
+    .Productos {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 15px;
+    }
+
+    .tarjetas {
+        justify-content: center;
+        width: 100%;
+    }
+
     .Producto {
         width: 100%;
         max-width: 300px;
+        box-sizing: border-box;
     }
 
-    /* Equipo */
-    .Persona {
+    .Producto img {
+        max-width: 100%;
+    }
+
+    /* Equipo: dos tarjetas por fila */
+
+    .Equipo {
         width: 100%;
-        max-width: 300px;
+        box-sizing: border-box;
+        padding: 35px 10px;
+    }
+
+    .Personas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 12px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .Persona {
+        width: calc(50% - 6px);
+        max-width: 220px;
+        min-width: 0;
+        padding: 12px 8px;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+    }
+
+    .Persona h3 {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .Persona p {
+        font-size: 13px;
+        line-height: 1.4;
     }
 
     /* Anabel */
+
     .mascota-flotante {
         width: 100px;
         height: 100px;
@@ -371,45 +509,10 @@ footer p {
     }
 
     /* Pie de página */
+
     footer {
+        width: 100%;
+        box-sizing: border-box;
         padding: 20px 10px;
         overflow-wrap: anywhere;
-    }
-}
-
-        
-/* ACelu2 lo intento */
-@media (max-width: 600px) {
-
-    header {
-        padding: 12px 10px;
-    }
-
-    .logo {
-        gap: 8px;
-        flex-wrap: nowrap;
-        min-width: 0;
-    }
-
-    .logo img {
-        width: 45px;
-        height: 40px;
-        flex-shrink: 0;
-    }
-
-    .logo h1 {
-        font-size: 15px;
-        flex-shrink: 0;
-    }
-
-    nav {
-        gap: 10px;
-        flex-wrap: nowrap;
-        margin-left: auto;
-    }
-
-    nav a {
-        font-size: 12px;
-        white-space: nowrap;
-    }
-}
+    
