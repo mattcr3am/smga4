@@ -1,3 +1,10 @@
+
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -52,6 +59,7 @@ nav a:hover {
 /* PRODUCTO */
 
 .producto-detalle {
+    width: calc(100% - 40px);
     max-width: 1000px;
     margin: 60px auto;
     padding: 40px;
@@ -85,6 +93,7 @@ nav a:hover {
 
 .info-producto {
     width: 45%;
+    min-width: 0;
 }
 
 .info-producto h2 {
@@ -117,10 +126,8 @@ nav a:hover {
     padding: 13px 35px;
     border: none;
     border-radius: 20px;
-
     background-color: #4aa3df;
     color: white;
-
     font-size: 16px;
     cursor: pointer;
 }
@@ -137,4 +144,118 @@ footer {
     text-align: center;
     background-color: white;
     border-top: 1px solid #ddd;
+}
+
+
+/* ADAPTACIÓN PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    /* Encabezado */
+
+    header {
+        width: 100%;
+        padding: 10px 8px;
+        gap: 8px;
+        overflow: hidden;
+    }
+
+    .logo {
+        gap: 6px;
+        min-width: 0;
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo h1 {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    nav {
+        flex: 1;
+        min-width: 0;
+        margin-left: 4px;
+        gap: 12px;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav a {
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
+    /* Tarjeta del producto */
+
+    .producto-detalle {
+        width: calc(100% - 24px);
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 20px 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        border-radius: 15px;
+    }
+
+    /* Imagen */
+
+    .imagen-producto {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .imagen-producto img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 300px;
+        margin: 0 auto;
+    }
+
+    /* Información */
+
+    .info-producto {
+        width: 100%;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .info-producto h2 {
+        font-size: 25px;
+    }
+
+    .precio {
+        font-size: 24px;
+    }
+
+    .info-producto ul {
+        padding-left: 22px;
+    }
+
+    .info-producto button {
+        max-width: 100%;
+    }
+
+    /* Pie */
+
+    footer {
+        width: 100%;
+        padding: 20px 10px;
+        overflow-wrap: anywhere;
+    }
 }
