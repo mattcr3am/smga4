@@ -133,129 +133,163 @@ nav a:hover {
 }
 
 .info-producto button:hover {
-    background-color: #3189c4;
-}
 
+    
+/* CORRECCIÓN FINAL PARA CELULARES */
 
-/* PIE */
+@media screen and (max-width: 600px) {
 
-footer {
-    padding: 30px;
-    text-align: center;
-    background-color: white;
-    border-top: 1px solid #ddd;
-}
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
 
+    body {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
 
-/* ADAPTACIÓN PARA CELULARES */
-
-@media (max-width: 600px) {
-
-    /* Encabezado */
+    /* Encabezado a todo el ancho */
 
     header {
         width: 100%;
+        max-width: 100%;
+        margin: 0;
         padding: 10px 8px;
-        gap: 8px;
-        overflow: hidden;
+        box-sizing: border-box;
+        justify-content: flex-start;
     }
 
     .logo {
-        gap: 6px;
         min-width: 0;
-        flex-shrink: 0;
     }
 
-    .logo img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .logo h1 {
-        font-size: 14px;
-        white-space: nowrap;
-    }
-
-    nav {
-        flex: 1;
-        min-width: 0;
-        margin-left: 4px;
-        gap: 12px;
-        overflow-x: auto;
-        white-space: nowrap;
-        scrollbar-width: none;
-    }
-
-    nav::-webkit-scrollbar {
-        display: none;
-    }
-
-    nav a {
-        font-size: 12px;
-        flex-shrink: 0;
-    }
-
-    /* Tarjeta del producto */
+    /* Centrar la tarjeta del producto */
 
     .producto-detalle {
         width: calc(100% - 24px);
         max-width: 100%;
         margin: 20px auto;
-        padding: 20px 15px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-
-        border-radius: 15px;
+        box-sizing: border-box;
+        justify-content: center;
     }
 
-    /* Imagen */
-
-    .imagen-producto {
-        width: 100%;
-        max-width: 400px;
+    .imagen-producto,
+    .info-producto {
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .imagen-producto img {
         display: block;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        max-height: 300px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    /* Información */
+    /* Evitar que los elementos ensanchen la página */
 
-    .info-producto {
-        width: 100%;
-        max-width: 100%;
-        overflow-wrap: break-word;
-    }
-
-    .info-producto h2 {
-        font-size: 25px;
-    }
-
-    .precio {
-        font-size: 24px;
-    }
-
-    .info-producto ul {
-        padding-left: 22px;
-    }
-
-    .info-producto button {
+    img {
         max-width: 100%;
     }
-
-    /* Pie */
 
     footer {
         width: 100%;
-        padding: 20px 10px;
-        overflow-wrap: anywhere;
+        box-sizing: border-box;
+    }
+}        justify-content: center;
+    }
+
+    .imagen-producto,
+    .info-producto {
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .imagen-producto img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Evitar que los elementos ensanchen la página */
+
+    img {
+        max-width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
+
+/* CELUS */
+
+@media screen and (max-width: 600px) {
+
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    /* Encabezado a todo el ancho */
+
+    header {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 10px 8px;
+        box-sizing: border-box;
+        justify-content: flex-start;
+    }
+
+    .logo {
+        min-width: 0;
+    }
+
+    /* Centrar la tarjeta del producto */
+
+    .producto-detalle {
+        width: calc(100% - 24px);
+        max-width: 100%;
+        margin: 20px auto;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    .imagen-producto,
+    .info-producto {
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .imagen-producto img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Evitar que los elementos ensanchen la página */
+
+    img {
+        max-width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+    
