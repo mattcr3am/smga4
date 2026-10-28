@@ -376,3 +376,40 @@ footer p {
         overflow-wrap: anywhere;
     }
 }
+
+        
+/* ACelu2 lo intento */
+@media (max-width: 600px) {
+
+    header {
+        padding: 12px 10px;
+    }
+
+    .logo {
+        gap: 8px;
+        flex-wrap: nowrap;
+        min-width: 0;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .logo h1 {
+        font-size: 15px;
+        flex-shrink: 0;
+    }
+
+    nav {
+        gap: 10px;
+        flex-wrap: nowrap;
+        margin-left: auto;
+    }
+
+    nav a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}
