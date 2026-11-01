@@ -310,7 +310,9 @@ footer p {
     }
 
 header {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
     padding: 15px;
     gap: 15px;
 }
@@ -318,7 +320,8 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
+    gap: 8px;
 }
 
 .logo img {
@@ -332,9 +335,11 @@ header {
 
 nav {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    width: 100%;
 }
 
 nav a {
