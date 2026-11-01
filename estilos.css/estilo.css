@@ -298,11 +298,9 @@ footer p {
 }
 
 
-/* ADAPTACIÓN PARA CELULARES */
+/* CELU */
 
 @media (max-width: 600px) {
-
-    /* Evitar que la página se extienda hacia la derecha */
 
     html,
     body {
