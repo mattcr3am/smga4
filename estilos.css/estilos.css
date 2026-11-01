@@ -134,12 +134,16 @@ nav a:hover {
 
 .info-producto button:hover {
 
-    
+}
 
+
+/* CELULAR */
 
 @media screen and (max-width: 600px) {
+
     .producto-detalle {
         background-color: red !important;
         flex-direction: column !important;
     }
+
 }
