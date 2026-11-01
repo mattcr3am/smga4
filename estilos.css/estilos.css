@@ -135,3 +135,65 @@ nav a:hover {
 .info-producto button:hover {
 
 }
+
+/* CELULAR */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .producto-detalle {
+        width: 92%;
+        margin: 25px auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .imagen-producto {
+        width: 100%;
+    }
+
+    .imagen-producto img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    .info-producto {
+        width: 100%;
+    }
+
+    .info-producto h2 {
+        font-size: 25px;
+    }
+
+    .precio {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 13px;
+    }
+
+}
+
