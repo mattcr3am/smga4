@@ -136,6 +136,15 @@ nav a:hover {
 
 }
 
+  footer {
+        padding: 20px;
+        font-size: 13px;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
 /* CELULAR */
 
 @media screen and (max-width: 600px) {
@@ -214,14 +223,7 @@ nav a:hover {
         font-size: 24px;
     }
 
-    footer {
-        padding: 20px;
-        font-size: 13px;
-    background-color: white;
-    padding: 30px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-}
+
     
 }
 
