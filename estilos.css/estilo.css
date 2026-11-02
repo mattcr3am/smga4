@@ -309,41 +309,51 @@ footer p {
         overflow-x: clip;
     }
 
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    gap: 12px;
-}
+      /* ENCABEZADO CELULAR */
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        gap: 12px;
+    }
 
-.logo img {
-    display: none;
-}
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
 
-.logo h1 {
-    font-size: 22px;
-    text-align: center;
-}
+    .logo img {
+        display: block;
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
-}
+    .logo h1 {
+        font-size: 20px;
+        margin: 0;
+    }
 
-nav a {
-    font-size: 13px;
-}
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
     /* Inicio */
 
     .Inicio {
