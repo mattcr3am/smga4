@@ -309,8 +309,6 @@ footer p {
         overflow-x: clip;
     }
 
-/* ENCABEZADO CELULAR */
-
 header {
     display: flex;
     flex-direction: column;
@@ -350,7 +348,7 @@ nav {
 nav a {
     font-size: 13px;
 }
-
+}
     /* Inicio */
 
     .Inicio {
