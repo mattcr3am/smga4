@@ -140,25 +140,41 @@ nav a:hover {
 
 @media screen and (max-width: 600px) {
 
-    header {
-        flex-direction: column;
-        padding: 15px;
-        gap: 15px;
-    }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 12px;
+}
 
-    .logo h1 {
-        font-size: 20px;
-    }
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
+.logo img {
+    display: none;
+}
 
-    nav a {
-        font-size: 13px;
-    }
+.logo h1 {
+    font-size: 22px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+nav a {
+    font-size: 13px;
+}
 
     .producto-detalle {
         width: 92%;
